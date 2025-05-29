@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SUPERMERCADO</title>
+</head>
+<body background="img/Fondo.jpg" style="background-size: cover;">
+	<footer style="background-color: black; height: 41px;">
+	<h1 style="color: skyblue;" align="center">SUPERMERCADO DE CARLOS ALFREDO</h1>
+	</footer>
+<br>
+    <table align="center" border="2" style="background-color: gray; border-color: black;">
+    	<td>
+    	<img src="img/aguacate.png" style="max-height: 300px;"> <br>
+    	<input type="number" value="0" style="width: 102px;" placeholder="Cantidad" id="ca1">
+    	<input type="number" value="0" style="width: 102px;" placeholder="Precio" id="pr1">
+    	</td>
+        
+        <td>
+        <img src="img/bokachitos.png" style="max-height: 300px; max-width: 225px;"> <br> 
+        <input type="number" value="0" style="width: 102px;" placeholder="Cantidad" id="ca2">
+        <input type="number" value="0" style="width: 102px;" placeholder="Precio" id="pr2">
+        </td>
+
+        <td>
+        <img src="img/brocoli.png" style="max-height: 300px; max-width: 224px;"> <br><br>
+        <input type="number" value="0" style="width: 102px; vertical-align: -40px;" placeholder="Cantidad" id="ca3">
+        <input type="number" value="0" style="width: 102px; vertical-align: -40px;" placeholder="Precio" id="pr3">
+        </td>
+        
+        <tr>
+        	
+        <td>
+        <img src="img/coca.png" style="max-height: 300px;"> <br>
+        <input type="number" value="0" style="width: 102px;" placeholder="Cantidad" id="ca4">
+        <input type="number" value="0" style="width: 102px;" placeholder="Precio" id="pr4">
+        </td>
+
+        <td>
+        <img src="img/ganador.png" style="max-height: 300px;"> <br>
+        <input type="number" value="0" style="width: 102px; vertical-align: -57px;" placeholder="Cantidad" id="ca5">
+        <input type="number" value="0" style="width: 102px; vertical-align: -57px;" placeholder="Precio" id="pr5">
+        </td>
+
+        <td>
+        <img src="img/papa.png" style="max-height: 300px;"> <br>
+        <input type="number" value="0" style="width: 102px; vertical-align: -57px;" placeholder="Cantidad" id="ca6">
+        <input type="number" value="0" style="width: 102px; vertical-align: -57px;" placeholder="Precio" id="pr6">
+        </td>
+
+        </tr>
+        <tr>
+        
+        <td>
+        <img src="img/pepino.png" style="max-height: 300px;"> <br>
+        <input type="number" value="0" style="width: 102px;" placeholder="Cantidad" id="ca7">
+        <input type="number" value="0" style="width: 102px;" placeholder="Precio" id="pr7">
+        </td>
+
+        <td>
+        <img src="img/platano.png" style="max-height: 300px; max-width: 225px;"> <br>
+        <input type="number" value="0" style="width: 102px; vertical-align: -49px;" placeholder="Cantidad" id="ca8">
+        <input type="number" value="0" style="width: 102px; vertical-align: -49px;" placeholder="Precio" id="pr8">
+        </td>
+
+        <td>
+        <img src="img/tender.png" style="max-height: 300px;"> <br>
+        <input type="number" value="0" style="width: 102px;" placeholder="Cantidad" id="ca9">
+        <input type="number" value="0" style="width: 102px;" placeholder="Precio" id="pr9">
+        </td>
+
+        </tr>
+
+    </table>
+    <br>
+
+    <div align="center">
+    	<button style="width: 85px; height: 30px; background-color: lightgreen;" onclick="calcularTotal()"> SUMAR </button>
+    </div>
+    <div align="center">
+    	<strong>Total:</strong> <label id="total"> 0.00 </label>
+    </div>
+
+<script>
+	function calcularTotal() {
+	var cantidad1 = document.getElementById("ca1").value;
+	var precio1 = document.getElementById("pr1").value;
+	var cantidad2 = document.getElementById("ca2").value;
+	var precio2 = document.getElementById("pr2").value;
+	var cantidad3 = document.getElementById("ca3").value;
+	var precio3 = document.getElementById("pr3").value;
+	var cantidad4 = document.getElementById("ca4").value;
+	var precio4 = document.getElementById("pr4").value;
+	var cantidad5 = document.getElementById("ca5").value;
+	var precio5 = document.getElementById("pr5").value;
+	var cantidad6 = document.getElementById("ca6").value;
+	var precio6 = document.getElementById("pr6").value;
+	var cantidad7 = document.getElementById("ca7").value;
+	var precio7 = document.getElementById("pr7").value;
+	var cantidad8 = document.getElementById("ca8").value;
+	var precio8 = document.getElementById("pr8").value;
+	var cantidad9 = document.getElementById("ca9").value;
+	var precio9 = document.getElementById("pr9").value;
+	
+   var total = (parseFloat(cantidad1) * parseFloat(precio1)) + (parseFloat(cantidad2) * parseFloat(precio2)) + (parseFloat(cantidad3) * parseFloat(precio3)) + (parseFloat(cantidad4) * parseFloat(precio4)) + (parseFloat(cantidad5) * parseFloat(precio5)) + (parseFloat(cantidad6) * parseFloat(precio6)) + (parseFloat(cantidad7) * parseFloat(precio7)) + (parseFloat(cantidad8) * parseFloat(precio8)) + (parseFloat(cantidad9) * parseFloat(precio9)) ;
+   alert(total);
+
+}
+
+</script>
+
+<footer style="background-color: black; color: white; text-align: center;">
+<p>&copy; 2025 SuperMercado. Todos los derechos reservados.</p>
+<p>Carlos Alfredo y 4-A Programacion.</p>
+<p>Msi Alondra Zavala</p>
+</footer>
+
+</body>
+</html>
